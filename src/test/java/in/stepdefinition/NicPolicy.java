@@ -69,6 +69,7 @@ public class NicPolicy {
 	@Then("user click policy quotation")
 	public void user_click_policy_quotation() {
 	    base.button(ni.getUser_generate());
+	    System.out.println("Scenario 1 : Completed");
 	}
 	
 	@When("user click cashless guarage")
@@ -88,12 +89,14 @@ public class NicPolicy {
 
 	@When("user click the products")
 	public void user_click_the_products() {
-	    base.button(ni.getUser_car());
+		base.moveTo(ni.getUser_car());
+		base.actclick(ni.getUser_car());
 	}
 
 	@When("user select claim procedure")
 	public void user_select_claim_procedure() {
-		base.button(ni.getUser_claim());
+		base.moveTo(ni.getUser_claim());
+		base.actclick(ni.getUser_claim());
 	    
 	}
 
@@ -111,6 +114,7 @@ public class NicPolicy {
 	public void user_download_list_of_service_center() {
 	    base.moveTo(ni.getUser_service());
 	    base.actclick(ni.getUser_service());
+	    System.out.println("Scenario 2 : Completed");
 	}
 
 
@@ -139,6 +143,7 @@ public class NicPolicy {
 	public void user_select_the_policy_details() {
 	       base.waitForelementToBeClickable(ni.getUser_policy());
 	       base.javascriptexecutorclick(ni.getUser_policy());
+	       System.out.println("Scenario 3 : Completed");
 	}
 	
 	@When("user select the products in home page")
@@ -161,12 +166,13 @@ public class NicPolicy {
 	@Then("user click claim procedure options")
 	public void user_click_claim_procedure_options() {
 		  base.waitForelementToBeClickable(ni.getUser_claimprocedure());
-	      base.javascriptexecutorclick(ni.getUser_claimprocedure());
+		  base.javascriptexecutorclick(ni.getUser_claimprocedure());
 	}
 
 	@Then("user scrolldown to view required documents")
 	public void user_scrolldown_to_view_required_documents() {
 		  base.javascriptscrolldown(ni.getUser_documents());
+		  System.out.println("Scenario 4 : Completed");
 	    
 	}
 	
@@ -191,13 +197,14 @@ public class NicPolicy {
 	@Then("user click download function")
 	public void user_click_download_function() {
 		base.waitForelementToBeClickable(ni.getUser_down());
-	    base.javascriptexecutorclick(ni.getUser_down());
+		base.javascriptexecutorclick(ni.getUser_down());
 	}
 
 	@Then("user select the policy form")
 	public void user_select_the_policy_form() {
 		base.waitForelementToBeClickable(ni.getUser_form());
-	    base.javascriptexecutorclick(ni.getUser_form());
+		base.javascriptexecutorclick(ni.getUser_form());
+	    System.out.println("Scenario 5 : Completed");
 	}
 }
 

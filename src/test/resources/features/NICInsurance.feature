@@ -11,7 +11,7 @@ Feature: National Insurance Application
     Then user fills out the application form with valid details
     And user click policy quotation
 
-@smaoke
+@smoke
   Scenario Outline: To verify user able to apply private car insurance policy 
     When user click cashless guarage
     And user search the products in search bar  "<search>"

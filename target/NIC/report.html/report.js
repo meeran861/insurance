@@ -93,7 +93,7 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@smaoke"
+      "name": "@smoke"
     }
   ]
 });
@@ -187,7 +187,7 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@smaoke"
+      "name": "@smoke"
     }
   ]
 });

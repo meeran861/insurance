@@ -42,9 +42,8 @@ public class BaseClass   {
  driver = new EdgeDriver();
  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
  driver.manage().window().maximize();
- 
 }
-
+	
 public void applicationlaunch(String url)
 {
 	driver.get(url);
@@ -57,7 +56,6 @@ public void inputKeys(WebElement ele, String value) {
 public void button(WebElement ele) {
        ele.click();		
 }
-
 public boolean displayed(WebElement ele) {
 	boolean display=ele.isDisplayed();
 	return display;

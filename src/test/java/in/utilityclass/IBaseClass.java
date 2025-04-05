@@ -67,12 +67,9 @@ public interface IBaseClass {
 
 	void rightclickonele(WebElement ele);
 
-
-
 	void enterFrame(String frame);
 
 	void exitFrame(String value);
-
 
 	void inputKeys(WebElement ele, String value, Keys enter);
 	
@@ -101,9 +98,7 @@ public interface IBaseClass {
 	//for explicit wait 
 	void waitForelementToBeClickable(WebElement element);
 	
-
 	void waitForvisible(WebElement element);
-
 
 	// Explicit Wait - Wait for an element to be present in the DOM
 	void waitForElementPresence(WebElement element);
